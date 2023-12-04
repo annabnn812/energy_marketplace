@@ -1,0 +1,144 @@
+
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400|Lora:400);
+
+
+.article {
+  color: var(--cement);
+  margin-left: 0;
+  position: relative;
+  max-width: 66em;
+}
+
+@media (min-width: 55em) {
+  .article {
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 80em) {
+  .article {
+    margin-left: 50%;
+  }
+}
+
+.article_container {
+   
+    background-color: rgba(53, 97, 75, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    
+  }
+  .article_container_card {
+
+    background-color: rgba(53, 97, 75, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+	width: 870px; 
+  }
+  .article_container_text {
+  
+    background-color: rgba(53, 97, 75, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+	width: 1570px;
+  }
+
+.lead {
+  color: var(--cement);
+  font-size: ms(2);
+  max-width: 20em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hr {
+  border: none;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/hr-01.png') no-repeat center;
+  height: 40px;
+  margin: 5em 0;
+}
+
+.section {
+  column-width: 14em;
+  column-gap: 1.33em;
+  padding: 0 1em;
+}
+
+@media (min-width: 55em) {
+  .section {
+    padding: 0 3em;
+  }
+}
+
+.section p:first-of-type:first-letter {
+  color: var(--yellow);
+  float: left;
+  font-size: 7em;
+  line-height: 1;
+  margin-top: -0.2em;
+  margin-bottom: -0.2em;
+  margin-right: 0.1em;
+}
+
+.p {
+  text-align: justify;
+}
+
+.img {
+  max-width: 90%;
+  margin-bottom: 1.33em;
+  vertical-align: middle;
+}
+
+.blockquote {
+  border-left: 0.2em solid var(--yellow);
+  font-size: ms(3);
+  padding: 0.1em 0.5em;
+  line-height: 1.5;
+  margin-left: 0;
+  margin-right: 0;
+  quotes: "“" "”" "‘" "’";
+}
+
+.blockquote::before,
+.blockquote::after {
+  color: var(--yellow);
+  font-size: ms(1);
+  line-height: 0;
+}
+
+.blockquote::before {
+  content: open-quote;
+}
+
+.blockquote::after {
+  content: close-quote;
+}
+
+@media (min-width: 55em) {
+  .blockquote {
+    position: absolute;
+    right: 100%;
+    top: 80vh;
+    width: 9em;
+    background: var(--black);
+  }
+}
